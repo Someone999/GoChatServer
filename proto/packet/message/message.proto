@@ -1,5 +1,5 @@
 syntax = "proto3";
-option go_package="/generated/message";
+option go_package="/generated/packet/message";
 
 message Attachment {
     string AttachmentName = 1;

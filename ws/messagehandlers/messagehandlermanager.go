@@ -1,7 +1,7 @@
 package messagehandlers
 
 import (
-	messagehandlers "awesomeProject/objectmanager"
+	messagehandlers "ChatServer/objectmanager"
 	"github.com/gorilla/websocket"
 	"sync"
 )

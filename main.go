@@ -1,7 +1,7 @@
 package main
 
 import (
-	"awesomeProject/ws"
+	"ChatServer/ws"
 	"github.com/gin-gonic/gin"
 	"log"
 )

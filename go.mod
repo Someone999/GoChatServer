@@ -1,4 +1,4 @@
-module awesomeProject
+module ChatServer
 
 go 1.23
 
