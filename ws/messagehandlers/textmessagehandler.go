@@ -7,6 +7,6 @@ import (
 type TextMessageHandler struct {
 }
 
-func (TextMessageHandler TextMessageHandler) Handle(msgType int, data []byte, conn *websocket.Conn) error {
+func (TextMessageHandler TextMessageHandler) Handle(_ int, _ []byte, _ *websocket.Conn) error {
 	return nil
 }

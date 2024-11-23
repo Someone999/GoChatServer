@@ -9,7 +9,7 @@ var internalProtoMessageHandlerManager messagehandlers.HandlerManager[ProtoMessa
 
 var pkgMutex = sync.Mutex{}
 
-func GetMessageHandlerManager() *messagehandlers.HandlerManager[ProtoMessageHandler] {
+func GetProtoMessageHandlerManager() *messagehandlers.HandlerManager[ProtoMessageHandler] {
 	pkgMutex.Lock()
 	defer pkgMutex.Unlock()
 

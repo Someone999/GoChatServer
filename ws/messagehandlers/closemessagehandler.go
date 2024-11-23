@@ -5,6 +5,6 @@ import "github.com/gorilla/websocket"
 type CloseMessageHandler struct {
 }
 
-func (CloseMessageHandler CloseMessageHandler) Handle(msgType int, data []byte, conn *websocket.Conn) error {
+func (CloseMessageHandler CloseMessageHandler) Handle(_ int, _ []byte, _ *websocket.Conn) error {
 	return nil
 }
