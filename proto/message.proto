@@ -1,16 +1,17 @@
-option go_package="/message";
+syntax = "proto3";
+option go_package="/generated/message";
 
 message Attachment {
-    required string AttachmentName = 1;
-    required bytes Data = 2;
+    string AttachmentName = 1;
+    bytes Data = 2;
 }
 
 message Message {
-    required int64 MessageId = 1;
-    required int64 SendTime = 2;
-    required int64 SendId = 3;
-    required int64 ReceiveId = 4;
-    required bytes Data = 5;
-    required int32 MessageType = 6;
+    int64 MessageId = 1;
+    int64 SendTime = 2;
+    int64 SendId = 3;
+    int64 ReceiveId = 4;
+    bytes Data = 5;
+    int32 MessageType = 6;
     repeated Attachment Attachments = 7;
 }

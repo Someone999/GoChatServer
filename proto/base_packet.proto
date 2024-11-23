@@ -1,0 +1,15 @@
+syntax = "proto3";
+import "proto/message.proto";
+option go_package="/generated";
+
+enum MessageType {
+  UNKNOWN = 0;
+  MESSAGE = 1;
+}
+
+message BasePacket {
+  MessageType message_type = 1;
+  oneof data {
+    Message message = 2;
+  }
+}

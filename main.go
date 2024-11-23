@@ -7,12 +7,11 @@ import (
 )
 
 func main() {
-	var engine *gin.Engine = gin.Default()
+	var engine = gin.Default()
 	ws.InitWebSocket(engine)
 	runErr := engine.Run(":8080")
 	if runErr != nil {
 		log.Fatal(runErr)
 		return
 	}
-
 }
