@@ -1,0 +1,16 @@
+syntax = "proto3";
+option go_package="/generated/packet/message";
+option csharp_namespace = "Proto";
+
+message login {
+  string account = 1;//用户名/邮箱/手机号
+  string token = 2;//HTTP API返回的
+  int64 time = 3;//time.now
+  string sign = 4;//HMAC SHA256
+  //其他的在说
+}
+//message register {
+//  string account = 1;
+//  string password = 2;
+//  int64 time = 3;
+//}
